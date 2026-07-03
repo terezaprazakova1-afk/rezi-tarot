@@ -9,7 +9,8 @@
 <meta property="og:description" content="Accurate English-speaking tarot reader & psychic in Prague. Individual & group readings, rituals, event psychic hire. In person or online.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="images/portrait-hero.jpg">
+<meta property="og:url" content="https://terezaprazakova1-afk.github.io/rezi-tarot/">
+<meta property="og:image" content="https://terezaprazakova1-afk.github.io/rezi-tarot/images/portrait-hero.jpg">
 <meta name="geo.region" content="CZ-10">
 <meta name="geo.placename" content="Prague">
 <!-- After you buy a domain, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> -->
@@ -64,7 +65,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="RT%20-%20logo.png">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
 <style>
 /* ============ FONTS ============ */
 @font-face{
@@ -120,8 +122,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.08;letter
 
 .wrap{width:min(1160px,92%);margin-inline:auto}
 .label{
-  font-family:var(--font-accent);
-  font-size:.95rem;letter-spacing:.32em;text-transform:uppercase;
+  font-family:var(--font-body);font-weight:500;
+  font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;
   color:var(--copper);display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem;
 }
 .label::before{content:'';width:42px;height:1px;background:var(--copper);opacity:.7}
@@ -199,7 +201,7 @@ nav{
   100%{transform:translateY(110vh) translateX(9vw) rotate(360deg);opacity:0}
 }
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center}
-.hero-kicker{font-family:var(--font-accent);letter-spacing:.4em;text-transform:uppercase;font-size:.95rem;color:var(--rose);margin-bottom:1.6rem;display:flex;align-items:center;gap:1rem}
+.hero-kicker{font-family:var(--font-body);font-weight:500;letter-spacing:.4em;text-transform:uppercase;font-size:.82rem;color:var(--rose);margin-bottom:1.6rem;display:flex;align-items:center;gap:1rem}
 .hero-kicker::before{content:'♀';font-size:1.3rem;letter-spacing:0;animation:pulse 4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
 .hero h1{font-size:clamp(2.9rem,6.4vw,5.4rem);margin-bottom:1.6rem}
@@ -258,7 +260,7 @@ nav{
   overflow:hidden;padding:1.05rem 0;position:relative;z-index:3;
 }
 .marquee-track{display:flex;gap:3.4rem;white-space:nowrap;width:max-content;animation:scrollX 30s linear infinite}
-.marquee span{font-family:var(--font-accent);letter-spacing:.28em;text-transform:uppercase;font-size:.88rem;display:flex;align-items:center;gap:3.4rem}
+.marquee span{font-family:var(--font-body);font-weight:400;letter-spacing:.28em;text-transform:uppercase;font-size:.82rem;display:flex;align-items:center;gap:3.4rem}
 .marquee i{color:var(--copper);font-style:normal}
 @keyframes scrollX{to{transform:translateX(-50%)}}
 
@@ -279,7 +281,7 @@ nav{
   margin-top:2rem;padding:1.6rem 1.8rem;border-radius:var(--radius);
   background:rgba(255,255,255,.34);border:1px solid var(--glass-cream-border);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  font-family:var(--font-accent);font-size:1.18rem;line-height:1.5;color:var(--brown-800);
+  font-family:var(--font-body);font-style:italic;font-weight:300;font-size:1.14rem;line-height:1.6;color:var(--brown-800);
   box-shadow:0 14px 40px rgba(41,23,9,.08);
 }
 .glass-quote b{color:var(--copper);font-weight:400}
@@ -314,7 +316,7 @@ nav{
 .card h3{font-size:1.42rem;margin-bottom:.7rem;color:var(--cream)}
 .card p{font-size:.98rem;color:var(--cream-dim)}
 .card .tag{
-  position:absolute;top:1.3rem;right:1.4rem;font-family:var(--font-accent);font-size:.68rem;
+  position:absolute;top:1.3rem;right:1.4rem;font-family:var(--font-body);font-weight:500;font-size:.66rem;
   letter-spacing:.25em;text-transform:uppercase;color:var(--copper);opacity:.9;
 }
 
@@ -369,9 +371,55 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 footer .fl{font-family:var(--font-display);font-size:1.1rem;color:var(--cream)}
 footer .fl span{color:var(--rose)}
 
+/* ============ STATS ============ */
+.stats{display:flex;gap:1.6rem;margin-top:4rem;flex-wrap:wrap;justify-content:center}
+.stat{
+  flex:1;min-width:200px;text-align:center;padding:1.8rem 1.4rem;border-radius:var(--radius);
+  background:var(--glass);border:1px solid var(--glass-border);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+}
+.stat b{font-family:var(--font-display);font-weight:400;font-size:2.2rem;color:var(--rose);display:block;line-height:1.1}
+.stat span{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim);font-weight:500}
+
+/* ============ HOW IT WORKS ============ */
+.how{padding:6.5rem 0 1rem}
+.how h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:.8rem}
+.how h2 em{font-family:var(--font-accent);font-style:normal;color:var(--copper)}
+.how .sub{color:#4a3420;max-width:34rem;margin-bottom:3rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.step{
+  position:relative;padding:2.2rem 1.9rem;border-radius:var(--radius);
+  background:rgba(255,255,255,.38);border:1px solid var(--glass-cream-border);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  box-shadow:0 14px 40px rgba(41,23,9,.07);
+}
+.step .num{font-family:var(--font-display);font-size:2.6rem;color:var(--copper);display:block;line-height:1;margin-bottom:.9rem}
+.step h3{font-size:1.25rem;margin-bottom:.5rem;color:var(--brown-900)}
+.step p{font-size:.95rem;color:#4a3420}
+.how .cta-row{text-align:center;margin-top:2.6rem}
+.btn-dark{background:var(--brown-900);color:var(--cream)}
+.btn-dark:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(41,23,9,.35)}
+@media(max-width:960px){.steps{grid-template-columns:1fr}}
+
+/* ============ TESTIMONIALS (hidden until real quotes arrive) ============ */
+.testi{padding:6.5rem 0 0}
+.testi h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:2.6rem}
+.testi h2 em{font-family:var(--font-accent);font-style:normal;color:var(--copper)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.tcard{
+  padding:2.1rem 1.9rem;border-radius:var(--radius);
+  background:rgba(255,255,255,.38);border:1px solid var(--glass-cream-border);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  box-shadow:0 14px 40px rgba(41,23,9,.07);
+}
+.tcard .strs{color:var(--copper);letter-spacing:.2em;margin-bottom:.8rem;font-size:.95rem}
+.tcard p{font-style:italic;color:#4a3420;margin-bottom:1rem;font-size:.98rem}
+.tcard cite{font-style:normal;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-600)}
+@media(max-width:960px){.testi-grid{grid-template-columns:1fr}}
+
 /* ============ ABOUT ASTRO ============ */
 .astro{margin-top:1.8rem}
-.astro-label{display:block;font-family:var(--font-accent);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--copper);margin-bottom:.8rem}
+.astro-label{display:block;font-family:var(--font-body);font-weight:500;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--copper);margin-bottom:.8rem}
 
 /* ============ INSTAGRAM BANNER ============ */
 .ig-banner{
@@ -398,7 +446,7 @@ footer .fl span{color:var(--rose)}
 .ig-banner.visible .ig-arrow path{stroke-dashoffset:0}
 .ig-glyph{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:.55rem;transition:transform .4s}
 .ig-glyph svg{width:44px;height:44px;stroke:var(--cream);stroke-width:2;fill:none;animation:pulse 4.5s ease-in-out infinite}
-.ig-glyph small{font-family:var(--font-accent);letter-spacing:.18em;font-size:.8rem;color:rgba(244,234,216,.85)}
+.ig-glyph small{font-family:var(--font-body);font-weight:500;letter-spacing:.18em;font-size:.78rem;color:rgba(244,234,216,.85)}
 .ig-banner:hover .ig-glyph{transform:scale(1.08) rotate(-3deg)}
 @media(max-width:720px){.ig-banner{gap:1.4rem;padding:2.8rem 1.5rem}.ig-arrow{width:56px}}
 
@@ -462,7 +510,7 @@ footer .fl span{color:var(--rose)}
 .drop.d2{animation-delay:.45s}.drop.d3{animation-delay:.9s}.drop.d4{animation-delay:1.25s}
 @keyframes dropFall{0%{transform:translateY(0);opacity:0}12%{opacity:.9}80%{opacity:.7}100%{transform:translateY(44px);opacity:0}}
 .fountain-glow{animation:pulse 5s ease-in-out infinite}
-.fountain-cap{text-align:center;font-family:var(--font-accent);letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--cream-dim)}
+.fountain-cap{text-align:center;font-family:var(--font-body);font-weight:500;letter-spacing:.28em;text-transform:uppercase;font-size:.68rem;color:var(--cream-dim)}
 .wish-msg{min-height:2.4em;font-family:var(--font-accent);font-size:1.2rem;color:var(--rose);opacity:0;transform:translateY(8px);transition:opacity .9s,transform .9s;margin:1rem auto 2.6rem;max-width:30rem}
 .wish-msg.show{opacity:1;transform:none}
 
@@ -472,7 +520,7 @@ footer .fl span{color:var(--rose)}
 .sway{transform-box:fill-box;transform-origin:bottom center;animation:sway 5.5s ease-in-out infinite}
 .sway.s2{animation-delay:-1.8s}.sway.s3{animation-delay:-3.4s}.sway.s4{animation-delay:-2.6s;animation-duration:6.5s}
 @keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3.5deg)}}
-.scene-cap{text-align:center;font-family:var(--font-accent);letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;color:var(--brown-600);margin-top:1.2rem}
+.scene-cap{text-align:center;font-family:var(--font-body);font-weight:500;letter-spacing:.24em;text-transform:uppercase;font-size:.7rem;color:var(--brown-600);margin-top:1.2rem}
 .butterfly{position:absolute;top:14%;left:0;width:36px;pointer-events:none;animation:flyAcross 20s linear infinite;opacity:.9}
 .butterfly .wings{transform-box:fill-box;transform-origin:center;animation:flap .32s ease-in-out infinite alternate}
 @keyframes flap{from{transform:scaleX(1)}to{transform:scaleX(.4)}}
@@ -527,7 +575,7 @@ footer .fl span{color:var(--rose)}
     <li><a href="blog.html">Blog</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-cta" href="https://wa.me/420737079739" target="_blank" rel="noopener">Book a Reading</a>
+  <a class="nav-cta" href="https://wa.me/420737079739?text=Hi%20Rezi!%20I%27d%20like%20to%20book%20a%20tarot%20reading%20with%20you.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">Book a Reading</a>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
 </nav>
 
@@ -547,7 +595,7 @@ footer .fl span{color:var(--rose)}
         for you, your circle, or your next unforgettable event in the Czech Republic.
       </p>
       <div class="hero-ctas reveal visible d3">
-        <a class="btn btn-solid" href="https://wa.me/420737079739" target="_blank" rel="noopener">✦ Book via WhatsApp</a>
+        <a class="btn btn-solid" href="https://wa.me/420737079739?text=Hi%20Rezi!%20I%27d%20like%20to%20book%20a%20tarot%20reading%20with%20you.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">✦ Book via WhatsApp</a>
         <a class="btn btn-glass" href="#services">Explore Offerings</a>
       </div>
     </div>
@@ -683,6 +731,11 @@ footer .fl span{color:var(--rose)}
         <p>Venus-led sessions on self-care, radiance and feminine energy — reconnecting you with the soft power that is already yours.</p>
       </div>
     </div>
+    <div class="stats">
+      <div class="stat reveal"><b>10+</b><span>Years of practice</span></div>
+      <div class="stat reveal d1"><b>1000s</b><span>Readings given</span></div>
+      <div class="stat reveal d2"><b>EN · CZ</b><span>In person &amp; online</span></div>
+    </div>
   </div>
 </section>
 
@@ -786,6 +839,50 @@ footer .fl span{color:var(--rose)}
   </span>
 </a>
 
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <div class="wrap">
+    <p class="label reveal">Simple as that</p>
+    <h2 class="reveal d1">How it <em>works</em></h2>
+    <p class="sub reveal d2">No rituals required on your side — just a message. I'll take care of the magic.</p>
+    <div class="steps">
+      <div class="step reveal d1">
+        <span class="num">i.</span>
+        <h3>Message me</h3>
+        <p>Write to me on WhatsApp or Instagram. Tell me what's on your mind — or just say hi, that's enough to begin.</p>
+      </div>
+      <div class="step reveal d2">
+        <span class="num">ii.</span>
+        <h3>We pick time &amp; place</h3>
+        <p>Prague city centre, a boutique spa, your hotel — or a video call from anywhere in the world. English or Czech.</p>
+      </div>
+      <div class="step reveal d3">
+        <span class="num">iii.</span>
+        <h3>We read</h3>
+        <p>You ask, the cards answer, I translate. You leave with clarity — and a photo of your spread to keep.</p>
+      </div>
+    </div>
+    <div class="cta-row reveal d3">
+      <a class="btn btn-dark" href="https://wa.me/420737079739?text=Hi%20Rezi!%20I%27d%20like%20to%20book%20a%20tarot%20reading%20with%20you.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">✦ Start with a message</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS — hidden until real quotes arrive.
+     To activate: remove style="display:none" below and replace the three sample cards
+     with real client quotes (with their permission). ============ -->
+<section class="testi" id="testimonials" style="display:none">
+  <div class="wrap">
+    <p class="label reveal">Kind words</p>
+    <h2 class="reveal d1">From the <em>garden guests</em></h2>
+    <div class="testi-grid">
+      <div class="tcard reveal d1"><div class="strs">★★★★★</div><p>"REPLACE — real client quote here."</p><cite>— Name, City</cite></div>
+      <div class="tcard reveal d2"><div class="strs">★★★★★</div><p>"REPLACE — real client quote here."</p><cite>— Name, City</cite></div>
+      <div class="tcard reveal d3"><div class="strs">★★★★★</div><p>"REPLACE — real client quote here."</p><cite>— Name, City</cite></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FAQ ============ -->
 <section class="faq" id="faq">
   <div class="wrap" style="max-width:820px">
@@ -794,7 +891,7 @@ footer .fl span{color:var(--rose)}
     <p class="sub reveal d2">Everything visitors usually want to know about booking a tarot reading in Prague.</p>
     <details class="reveal d2">
       <summary>Do you offer tarot readings in English in Prague?</summary>
-      <p>Yes. I read in fluent English (and Czech) — in person at boutique wellness locations, cafés, your hotel, or online via video call. Book via WhatsApp <a href="https://wa.me/420737079739" style="color:var(--copper)">+420 737 079 739</a>.</p>
+      <p>Yes. I read in fluent English (and Czech) — in person at boutique wellness locations, cafés, your hotel, or online via video call. Book via WhatsApp <a href="https://wa.me/420737079739?text=Hi%20Rezi!%20I%27d%20like%20to%20book%20a%20tarot%20reading%20with%20you.%20When%20are%20you%20available%3F" style="color:var(--copper)">+420 737 079 739</a>.</p>
     </details>
     <details class="reveal d3">
       <summary>Can I book a tarot reading as a tourist visiting Prague?</summary>
@@ -861,7 +958,7 @@ footer .fl span{color:var(--rose)}
     <p class="wish-msg" id="wishMsg" aria-live="polite"></p>
 
     <div class="contact-cards">
-      <a class="ccard reveal d1" href="https://wa.me/420737079739" target="_blank" rel="noopener">
+      <a class="ccard reveal d1" href="https://wa.me/420737079739?text=Hi%20Rezi!%20I%27d%20like%20to%20book%20a%20tarot%20reading%20with%20you.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">
         <span class="ico">✆</span><b>WhatsApp</b><span>+420 737 079 739</span>
       </a>
       <a class="ccard reveal d2" href="https://instagram.com/psychicreziprague" target="_blank" rel="noopener">
