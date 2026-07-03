@@ -14,5 +14,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Replace YOUR-DOMAIN with your real domain after you publish
-Sitemap: https://YOUR-DOMAIN/sitemap.xml
+Sitemap: https://rezitarot.com/sitemap.xml
