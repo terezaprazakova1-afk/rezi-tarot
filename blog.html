@@ -25,8 +25,9 @@
 <link rel="canonical" href="https://rezitarot.com/blog.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:'Black Mango';src:url('fonts/BlackMango-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Agnes';src:url('fonts/Agnes-Regular.otf') format('opentype');font-weight:400;font-display:swap}
 :root{
   --brown-950:#1d0f07;--brown-900:#291709;--brown-800:#3a2412;--brown-600:#5c3d22;
@@ -35,7 +36,7 @@
   --glass:rgba(244,234,216,.07);--glass-border:rgba(244,234,216,.16);
   --glass-cream:rgba(255,255,255,.38);--glass-cream-border:rgba(41,23,9,.12);
   --radius:26px;
-  --font-display:'Antic Didone',serif;--font-accent:'Agnes',serif;--font-body:'IBM Plex Sans',system-ui,sans-serif;
+  --font-display:'Black Mango',serif;--font-accent:'Agnes',serif;--font-body:'IBM Plex Sans',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -76,8 +77,8 @@ nav{
     linear-gradient(175deg,var(--brown-950),var(--brown-900));
 }
 .blog-hero .kicker{font-family:var(--font-body);font-weight:500;letter-spacing:.4em;text-transform:uppercase;font-size:.8rem;color:var(--rose);margin-bottom:1.4rem}
-.blog-hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-family:var(--font-accent);line-height:1.15}
-.blog-hero h1 em{font-family:var(--font-display);font-style:normal;color:var(--rose)}
+.blog-hero h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+.blog-hero h1 em{font-family:var(--font-accent);font-style:normal;color:var(--rose)}
 .blog-hero p{color:var(--cream-dim);max-width:34rem;margin:1.4rem auto 0}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;animation:drift 20s ease-in-out infinite alternate}
 .blob.b1{width:480px;height:480px;background:radial-gradient(circle,#c98d5f59,transparent 70%);top:-20%;left:-10%}
