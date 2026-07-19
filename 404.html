@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | Rezi Tarot</title>
+<meta name="robots" content="noindex">
+<script>
+// Old Wix blog lived at /post/<slug> — send those visitors to the new blog.
+(function(){
+  var p = location.pathname;
+  if (p.indexOf('/post/') === 0 || p.indexOf('/cs/post/') === 0) {
+    location.replace('/blog.html');
+  }
+})();
+</script>
+<style>
+@font-face{font-family:'Black Mango';src:url('/fonts/BlackMango-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Agnes';src:url('/fonts/Agnes-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+:root{
+  --brown-950:#1d0f07;--brown-900:#291709;
+  --cream:#f4ead8;--cream-dim:rgba(244,234,216,.62);
+  --copper:#c98d5f;--rose:#d8a98c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at 50% 20%,var(--brown-900),var(--brown-950));
+  color:var(--cream);font-family:'IBM Plex Sans',system-ui,sans-serif;
+  text-align:center;padding:2rem;
+}
+h1{font-family:'Black Mango',serif;font-size:clamp(2.2rem,6vw,3.6rem);font-weight:400;margin-bottom:.6rem}
+p{color:var(--cream-dim);max-width:34rem;margin:0 auto 2rem;line-height:1.6}
+.links a{
+  display:inline-block;margin:.4rem;padding:.8rem 1.6rem;border-radius:999px;
+  border:1px solid rgba(244,234,216,.3);color:var(--cream);text-decoration:none;
+  transition:border-color .2s,color .2s;
+}
+.links a:hover{border-color:var(--rose);color:var(--rose)}
+.mark{font-family:'Agnes',serif;color:var(--copper);letter-spacing:.2em;font-size:.85rem;margin-bottom:2rem;text-transform:uppercase}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">Rezi Tarot · Prague</div>
+  <h1>This card isn't in the deck</h1>
+  <p>The page you're looking for has moved or no longer exists. Stránka, kterou hledáte, byla přesunuta nebo už neexistuje.</p>
+  <nav class="links">
+    <a href="/">Home / English</a>
+    <a href="/cs/">Česky</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+</main>
+</body>
+</html>
