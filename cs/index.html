@@ -30,7 +30,7 @@
   "telephone": "+420737079739",
   "email": "rezitarot@gmail.com",
   "sameAs": ["https://instagram.com/psychicreziprague"],
-  "priceRange": "€35–€150",
+  "priceRange": "€35–€110",
   "knowsLanguage": ["en", "cs"],
   "founder": {
     "@type": "Person",
@@ -47,7 +47,7 @@
       {"@type": "Offer", "price": "40", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Online Tarot Reading", "description": "Live video-call tarot reading in English or Czech, 30–45 minutes. From €40."}},
       {"@type": "Offer", "price": "35", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Group Tarot Reading", "description": "Group tarot session in Prague for friends, hen parties, retreats and celebrations. From €35 per person, minimum 4 guests."}},
       {"@type": "Offer", "price": "75", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Tarot Rituals", "description": "Ceremonial 75–90 minute tarot rituals for new moons, intentions and life thresholds. From €75."}},
-      {"@type": "Offer", "price": "150", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Event Psychic Hire Prague", "description": "Hire a psychic and tarot reader for weddings, corporate events and parties in Prague. From €150 per hour, minimum 2 hours."}},
+      {"@type": "Offer", "price": "110", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Event Psychic Hire Prague", "description": "Hire a psychic and tarot reader for weddings, corporate events and parties in Prague. From €110 per hour, minimum 2 hours."}},
       {"@type": "Offer", "price": "55", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Beauty, Wellbeing & Femininity Session with Herbs & Flowers", "description": "Venus-led session on self-care, radiance and feminine energy, with herbalism woven in. From €55."}}
     ]
   }
@@ -58,12 +58,12 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Nabízíte výklad karet v Praze?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Kartářka a vědma Rezi nabízí výklad karet a tarotu česky i anglicky — osobně v boutique wellness prostorech, kavárnách, u vás v hotelu, nebo online přes videohovor. Rezervace přes WhatsApp +420 737 079 739."}},
+    {"@type": "Question", "name": "Nabízíte výklad karet v Praze?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Kartářka a vědma Rezi nabízí výklad karet a tarotu česky i anglicky — osobně v boutique wellness prostorech, kavárnách, u vás v hotelu, nebo online živě přes videohovor či formou osobního videozáznamu. Rezervace přes WhatsApp +420 737 079 739."}},
     {"@type": "Question", "name": "Jak rychle se dostanu na termín?", "acceptedAnswer": {"@type": "Answer", "text": "Obvykle do týdne. Napište na WhatsApp a domluvíme čas i místo — centrum Prahy, boutique spa, nebo online."}},
-    {"@type": "Question", "name": "Kolik stojí výklad karet v Praze?", "acceptedAnswer": {"@type": "Answer", "text": "U Rezi Tarot začínají online výklady na 1 000 Kč, individuální osobní výklad v Praze na 1 600 Kč, skupinové výklady na 900 Kč za osobu, tarotové rituály na 1 900 Kč a věštění na akcích na 3 700 Kč za hodinu."}},
+    {"@type": "Question", "name": "Kolik stojí výklad karet v Praze?", "acceptedAnswer": {"@type": "Answer", "text": "U Rezi Tarot začínají online výklady na 1 000 Kč, individuální osobní výklad v Praze na 1 600 Kč, skupinové výklady na 900 Kč za osobu, tarotové rituály na 1 900 Kč a věštění na akcích na 2 700 Kč za hodinu."}},
     {"@type": "Question", "name": "Mohu si objednat věštkyni na akci či večírek v Praze?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Rezi vystupuje jako věštkyně a kartářka na svatbách, rozlučkách se svobodou, oslavách narozenin, firemních večírcích a boutique akcích v Praze i po celém Česku."}},
     {"@type": "Question", "name": "Děláte skupinové výklady tarotu?", "acceptedAnswer": {"@type": "Answer", "text": "Ano — skupinová sezení pro přátele, retreaty a oslavy, kde každý host dostane svůj vlastní výklad."}},
-    {"@type": "Question", "name": "Vykládáte karty online?", "acceptedAnswer": {"@type": "Answer", "text": "Ano — online kartářka: výklad karet přes videohovor kamkoli, česky i anglicky."}},
+    {"@type": "Question", "name": "Vykládáte karty online?", "acceptedAnswer": {"@type": "Answer", "text": "Ano — online buď živě přes videohovor, nebo jako osobní videozáznam k opakovanému puštění, kamkoli na světě, česky i anglicky."}},
     {"@type": "Question", "name": "Co nabízíte kromě výkladů tarotu?", "acceptedAnswer": {"@type": "Answer", "text": "Tarotové rituály pro záměry a životní prahy, poradenství s bylinami a květinami a venušanská sezení zaměřená na krásu, wellbeing a ženskost."}}
   ]
 }
@@ -410,7 +410,7 @@ footer .fl span{color:var(--rose)}
 @media(max-width:960px){.steps{grid-template-columns:1fr}}
 
 /* ============ TESTIMONIALS (hidden until real quotes arrive) ============ */
-.testi{padding:6.5rem 0 0}
+.testi{padding:6.5rem 0 5rem}
 .testi h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:2.6rem}
 .testi h2 em{font-family:var(--font-display);font-style:normal;color:var(--copper)}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
@@ -634,16 +634,17 @@ footer .fl span{color:var(--rose)}
   <div class="petals" id="petals"></div>
   <div class="wrap hero-grid">
     <div>
-      <p class="hero-kicker reveal visible">Venušanský tarot · Praha</p>
-      <h1 class="reveal visible d1">Vy hledáte.<br>Já přenáším vzkazy.
+      <p class="hero-kicker reveal visible">Tarot · Praha</p>
+      <h1 class="reveal visible d1">Co se skrývá<br>ve vašich kartách?
         <em>vaše mystická tarotová múza</em>
       </h1>
       <p class="lead reveal visible d2">
-        Jsem Rezi — kartářka a vědma v Praze. Jasný a přesný výklad karet —
-        pro vás, vaše blízké i vaši příští nezapomenutelnou akci.
+        Jsem Rezi — pražská věštkyně s více než desetiletou praxí.
+        Specializuji se na výklady karet, rituály a slovanskou divinaci —
+        pro vás, nebo pro váš event.
       </p>
       <div class="hero-ctas reveal visible d3">
-        <a class="btn btn-solid" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">✦ Rezervace přes WhatsApp</a>
+        <a class="btn btn-solid" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">✦ Rezervuj si svou seanci</a>
         <a class="btn btn-glass" href="#services">Prohlédnout služby</a>
       </div>
     </div>
@@ -688,7 +689,7 @@ footer .fl span{color:var(--rose)}
     </div>
     <div>
       <p class="label reveal">O Rezi</p>
-      <h2 class="reveal d1">Moderní mystička,<br><em>zakořeněná ve starých cestách</em></h2>
+      <h2 class="reveal d1">Moderní mystička,<br><em>zakořeněná ve slovanských technikách</em></h2>
       <p class="reveal d2">
         Metafyzice se věnuji od roku 2005 — dvě dekády kartomancie, výkladu karet a tarotu,
         živých akcí a workshopů. Působím v Praze, vykládám česky i anglicky.
@@ -699,6 +700,12 @@ footer .fl span{color:var(--rose)}
         Začalo to už v dospívání — nejdřív tarot, pak orákula, runy a stará slovanská
         věštecká metoda předávaná po generace. Po tisících výkladů je můj styl přesný,
         ukotvený a nezaměnitelně můj. Lidé si mé výklady objednávají, protože fungují.
+      </p>
+      <p class="reveal d3">
+        Jsem asi ta nejracionálnější věštkyně, jakou potkáte. U mě nečekejte mlžení ani
+        plané sliby — dostanete jasno i v tom, o čem jste ani netušili, že je nejasné,
+        a pravdu řečenou s láskou. Chci, aby se vám dařilo, tak vám řeknu, jak se věci
+        mají — ukotveně, ale povzbudivě.
       </p>
       <div class="astro reveal d4">
         <span class="astro-label">Můj astrologický podpis · pro milovníky astro</span>
@@ -797,9 +804,9 @@ footer .fl span{color:var(--rose)}
       <p class="label reveal">Za kartami</p>
       <h2 class="reveal d1">Život ve <em>Venušině zahradě</em></h2>
       <p class="reveal d2">
-        Když zrovna nevykládám karty: kniha, bylinkový čaj, plány na cesty,
-        každodenní jóga a tanec. Pečuji o sebe i o své blízké —
-        tam je zakořeněná moje magie.
+        Když zrovna nevykládám karty, najdete mě u dobré knihy a bylinkového čaje,
+        nad plány na cesty nebo při každodenní józe a tanci. A ze všeho nejvíc
+        pečuji o svou rodinu a kamarády.
       </p>
       <div class="chips reveal d3">
         <span class="chip">✦ Studium tarotu &amp; astrologie</span>
@@ -861,7 +868,6 @@ footer .fl span{color:var(--rose)}
       <!-- venus mark on bench back -->
       <g stroke="var(--copper)" stroke-width="1.5"><circle cx="300" cy="88" r="5.5"/><path d="M300 93.5 v9 M296.5 98.5 h7"/></g>
     </svg>
-    <p class="scene-cap">posaďte se se mnou ve Venušině zahradě — karty si vás najdou</p>
   </div>
 </section>
 
@@ -883,22 +889,37 @@ footer .fl span{color:var(--rose)}
   <div class="wrap">
     <p class="label reveal">Jednoduše</p>
     <h2 class="reveal d1">Jak to <em>funguje</em></h2>
-    <p class="sub reveal d2">Z vaší strany žádné rituály — stačí zpráva. O magii se postarám já.</p>
+    <p class="sub reveal d2">Sezení se mnou je mystický zážitek — pohled do budoucna a jasno tam, kde ho nejvíc potřebujete, s dotekem slovanské magie a laskavosti.</p>
     <div class="steps">
       <div class="step reveal d1">
         <span class="num">i.</span>
         <h3>Napište mi</h3>
-        <p>Ozvěte se na WhatsApp nebo Instagram — napište, co máte na srdci.</p>
+        <p>Ozvěte se na WhatsApp nebo Instagram a napište, co vám leží na srdci.</p>
       </div>
       <div class="step reveal d2">
         <span class="num">ii.</span>
         <h3>Vybereme čas &amp; místo</h3>
-        <p>Centrum Prahy, boutique spa, váš hotel — nebo videohovor. Česky či anglicky.</p>
+        <p>Centrum Prahy, boutique spa, klidná kavárna nebo hezký park — nebo online, živě přes videohovor či jako videozáznam. Česky či anglicky, jak vám vyhovuje.</p>
       </div>
       <div class="step reveal d3">
         <span class="num">iii.</span>
-        <h3>Vykládáme</h3>
-        <p>Vy se ptáte, karty odpovídají, já překládám. Odejdete s jasnem.</p>
+        <h3>Řeknete mi, co řešíte</h3>
+        <p>Nemusíte psát celý příběh, ale čím konkrétnější budete, tím ostřejší výklad dostanete. Nemáte otázku? Nechte karty mluvit samy.</p>
+      </div>
+      <div class="step reveal d4">
+        <span class="num">iv.</span>
+        <h3>Vyložím karty</h3>
+        <p>Vy se ptáte, karty odpovídají, já překládám — narovinu, s empatií a špetkou humoru.</p>
+      </div>
+      <div class="step reveal d5">
+        <span class="num">v.</span>
+        <h3>Necháme to doznít</h3>
+        <p>Nemusíte všemu rozumět hned — to je ta největší past. Některé věci zapadnou až za pár týdnů. A to je na tom to krásné.</p>
+      </div>
+      <div class="step reveal d6">
+        <span class="num">vi.</span>
+        <h3>Vraťte se, až budete chtít</h3>
+        <p>Někdo přijde jednou za pár měsíců, někdo pravidelně. Řiďte se tím, co vám sedí — moje DM zůstávají otevřené.</p>
       </div>
     </div>
     <div class="cta-row reveal d3">
@@ -939,7 +960,7 @@ footer .fl span{color:var(--rose)}
         <div class="price"><b>od 1 600 Kč</b><small>65 €</small></div>
       </div>
       <div class="mrow">
-        <div class="name"><h3>Online výklad</h3><small>Videohovor odkudkoli, 30–45 minut.</small></div>
+        <div class="name"><h3>Online výklad</h3><small>Živý videohovor, nebo videozáznam k opakovanému puštění — 30–45 minut.</small></div>
         <div class="dots"></div>
         <div class="price"><b>od 1 000 Kč</b><small>40 €</small></div>
       </div>
@@ -961,10 +982,11 @@ footer .fl span{color:var(--rose)}
       <div class="mrow">
         <div class="name"><h3>Věštkyně na akce</h3><small>Za hodinu, min. 2 hodiny — svatby, firemní a boutique akce.</small></div>
         <div class="dots"></div>
-        <div class="price"><b>od 3 700 Kč</b><small>za hodinu · 150 €</small></div>
+        <div class="price"><b>od 2 700 Kč</b><small>za hodinu · 110 €</small></div>
       </div>
     </div>
     <p class="menu-note reveal d3">✦ Nevíte, které je vaše? Napište mi, co řešíte, a doporučím vám to pravé.</p>
+    <p class="menu-note reveal d3">⚡ Spěcháte? Zeptejte se na <b>expresní termín (+20 €)</b> — přednostně vás vezmu, když potřebujete jasno hned.</p>
     <div class="cta-row reveal d3">
       <a class="btn btn-solid" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">✦ Zeptat se na WhatsAppu</a>
     </div>
@@ -979,7 +1001,7 @@ footer .fl span{color:var(--rose)}
     <p class="sub reveal d2">Na co se lidé ptají před rezervací výkladu karet v Praze.</p>
     <details class="reveal d2">
       <summary>Nabízíte výklad karet v Praze?</summary>
-      <p>Ano. Jako kartářka a vědma vykládám karty česky i anglicky — osobně v boutique wellness prostorech, kavárnách, u vás, nebo online přes videohovor. Rezervace přes WhatsApp <a href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" style="color:var(--copper)">+420 737 079 739</a>.</p>
+      <p>Ano. Jako kartářka a vědma vykládám karty česky i anglicky — osobně v boutique wellness prostorech, kavárnách, u vás, nebo online — živě přes videohovor či formou osobního videozáznamu. Rezervace přes WhatsApp <a href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" style="color:var(--copper)">+420 737 079 739</a>.</p>
     </details>
     <details class="reveal d3">
       <summary>Jak rychle se dostanu na termín?</summary>
@@ -987,7 +1009,7 @@ footer .fl span{color:var(--rose)}
     </details>
     <details class="reveal d3">
       <summary>Kolik stojí výklad karet?</summary>
-      <p>Online výklady od 1 000 Kč, individuální osobní výklad v Praze od 1 600 Kč, skupinové od 900 Kč za osobu, tarotové rituály od 1 900 Kč a věštění na akcích od 3 700 Kč za hodinu. Přesná cena dle délky a místa — <a href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" style="color:var(--copper)">napište mi na WhatsApp</a>.</p>
+      <p>Online výklady od 1 000 Kč, individuální osobní výklad v Praze od 1 600 Kč, skupinové od 900 Kč za osobu, tarotové rituály od 1 900 Kč a věštění na akcích od 2 700 Kč za hodinu. Přesná cena dle délky a místa — <a href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" style="color:var(--copper)">napište mi na WhatsApp</a>.</p>
     </details>
     <details class="reveal d3">
       <summary>Mohu si objednat věštkyni na akci či večírek v Praze?</summary>
@@ -999,7 +1021,15 @@ footer .fl span{color:var(--rose)}
     </details>
     <details class="reveal d4">
       <summary>Vykládáte karty online?</summary>
-      <p>Ano — jako online kartářka vykládám karty přes videohovor kamkoli, česky i anglicky.</p>
+      <p>Ano — online buď živě přes videohovor, nebo jako osobní videozáznam, který si můžete pustit kdykoli a kolikrát chcete. Kamkoli na světě, česky i anglicky.</p>
+    </details>
+    <details class="reveal d4">
+      <summary>Fungují výklady online doopravdy?</summary>
+      <p>Fungují skvěle. To, že jsme každý jinde, na síle výkladu nic nemění — energie a záměr nemají hranice. Karty se s vámi spojí, ať jste kdekoli.</p>
+    </details>
+    <details class="reveal d4">
+      <summary>Je to moje úplně první věštění — co mám čekat?</summary>
+      <p>Ničeho se nebojte — provedu vás každým krokem. Nemusíte nic umět ani se „správně" ptát. Mým úkolem je, abyste odešli s větším klidem a jasnem, ne se zamotanou hlavou. První výklad bývá překvapivě příjemný.</p>
     </details>
     <details class="reveal d5">
       <summary>Co nabízíte kromě výkladů tarotu?</summary>
