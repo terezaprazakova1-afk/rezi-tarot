@@ -579,6 +579,93 @@ footer .fl span{color:var(--rose)}
   100%{transform:translate(106vw,0) rotate(5deg)}
 }
 
+/* ============ VENUS GARDEN GALLERY ============ */
+.vgarden{position:relative;overflow:hidden;background:var(--cream)}
+.vg-intro{width:min(720px,90%);margin:0 auto;text-align:center;padding:6.5rem 0 3.5rem}
+.vg-intro .label{justify-content:center}
+.vg-intro h2{font-size:clamp(2.4rem,5vw,3.8rem);margin:.3rem 0 1.1rem}
+.vg-intro h2 em{font-family:var(--font-accent);font-style:normal;color:var(--copper)}
+.vg-intro p{color:#4a3420;font-size:1.08rem}
+.vg-note{font-family:var(--font-body);font-weight:500;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--copper);display:flex;align-items:center;gap:.7rem}
+.vg-note::before{content:'♀';font-size:.95rem;letter-spacing:0}
+.vg-line{font-family:var(--font-display);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.18}
+
+/* full-bleed image band */
+.vg-full{position:relative;width:100%;height:clamp(460px,86vh,900px);overflow:hidden}
+.vg-full img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 2.6s cubic-bezier(.2,.7,.2,1)}
+.vg-full.visible img{transform:scale(1)}
+.vg-full::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(29,15,7,.74),rgba(29,15,7,.12) 45%,transparent 70%);pointer-events:none}
+.vg-cap{position:absolute;left:clamp(1.4rem,6vw,6rem);right:clamp(1.4rem,6vw,6rem);bottom:clamp(1.8rem,6vw,4.5rem);z-index:2;color:var(--cream);max-width:36rem}
+.vg-cap .vg-note{color:var(--rose);margin-bottom:.9rem}
+.vg-cap .vg-note::before{color:var(--rose)}
+.vg-cap.center{left:0;right:0;text-align:center;max-width:none}
+.vg-cap.center .vg-note{justify-content:center}
+.vg-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.7rem;justify-content:center}
+
+/* split image + text */
+.vg-split{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+.vg-split .vg-media{position:relative;overflow:hidden;min-height:clamp(440px,72vh,780px)}
+.vg-split .vg-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 2.3s cubic-bezier(.2,.7,.2,1)}
+.vg-split.visible .vg-media img{transform:scale(1)}
+.vg-split .vg-text{display:flex;flex-direction:column;justify-content:center;padding:clamp(2.5rem,6vw,5.5rem)}
+.vg-split .vg-text .vg-note{margin-bottom:1rem}
+.vg-split .vg-text h3{font-family:var(--font-display);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.12;margin:0 0 1.1rem;color:var(--brown-900)}
+.vg-split .vg-text p{color:#4a3420;font-size:1.06rem;max-width:32rem}
+.vg-split.dark{background:var(--brown-950)}
+.vg-split.dark .vg-text h3{color:var(--cream)}
+.vg-split.dark .vg-text p{color:var(--cream-dim)}
+.vg-split.rev .vg-media{order:2}
+
+/* triptych + rows */
+.vg-strip{padding:clamp(3.5rem,7vw,6.5rem) 0 clamp(2rem,4vw,3rem)}
+.vg-strip-cap{width:min(720px,90%);margin:0 auto clamp(2rem,4vw,3rem);text-align:center}
+.vg-strip-cap .vg-note{justify-content:center;margin-bottom:.9rem}
+.vg-strip-cap .vg-line{color:var(--brown-800)}
+.vg-strip-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.5rem,1.4vw,1.1rem);width:min(1300px,94%);margin:0 auto}
+.vg-strip-imgs .f{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:3/4.2;box-shadow:0 18px 44px rgba(41,23,9,.16)}
+.vg-strip-imgs .f:nth-child(2){transform:translateY(-28px)}
+.vg-strip-imgs .f img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.vg-strip-imgs .f:hover img{transform:scale(1.05)}
+.vg-row{display:grid;gap:clamp(.5rem,1.4vw,1.1rem);width:min(1300px,94%);margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 0 0}
+.vg-row.duo{grid-template-columns:1fr 1fr}
+.vg-row.trio{grid-template-columns:repeat(3,1fr)}
+.vg-row .f{position:relative;overflow:hidden;border-radius:12px;box-shadow:0 16px 40px rgba(41,23,9,.14)}
+.vg-row.duo .f{aspect-ratio:4/5}
+.vg-row.trio .f{aspect-ratio:3/4}
+.vg-row .f img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.vg-row .f:hover img{transform:scale(1.05)}
+.vg-rowcap{width:min(720px,90%);margin:1.5rem auto 0;text-align:center;font-family:var(--font-body);font-style:italic;color:var(--brown-600);font-size:1.02rem}
+.vgarden .divider{margin-bottom:-1rem}
+
+/* portrait plate (contained, for close portraits) */
+.vg-plate{background:var(--brown-950);color:var(--cream);text-align:center;padding:clamp(3.5rem,8vw,6.5rem) 1.4rem;position:relative;overflow:hidden}
+.vg-plate.grad{background:radial-gradient(800px 500px at 50% -12%,#4a2c15 0,transparent 60%),linear-gradient(180deg,var(--brown-900),var(--brown-950))}
+.vg-plate .pimg{width:min(90%,480px);aspect-ratio:2/3;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.vg-plate .pimg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.vg-plate.visible .pimg img{transform:scale(1)}
+.vg-plate .vg-note{justify-content:center;color:var(--rose);margin:1.9rem 0 .7rem}
+.vg-plate .vg-note::before{color:var(--rose)}
+.vg-plate .vg-line{color:var(--cream);max-width:28rem;margin:0 auto}
+.vg-plate .vg-ctas{margin-top:1.7rem}
+
+@media(max-width:860px){
+  .vg-split{grid-template-columns:1fr}
+  .vg-split .vg-media{min-height:62vh}
+  .vg-split.rev .vg-media{order:0}
+  .vg-strip-imgs{grid-template-columns:1fr 1fr}
+  .vg-strip-imgs .f:nth-child(2){transform:none}
+  .vg-strip-imgs .f:nth-child(3){grid-column:1 / -1;aspect-ratio:16/11}
+  .vg-row.trio{grid-template-columns:1fr 1fr}
+  .vg-row.trio .f:nth-child(3){grid-column:1 / -1;aspect-ratio:16/10}
+}
+@media(max-width:560px){
+  .vg-row.duo,.vg-strip-imgs{grid-template-columns:1fr}
+  .vg-strip-imgs .f:nth-child(3){aspect-ratio:3/4}
+  .vg-row.trio{grid-template-columns:1fr}
+  .vg-row.trio .f:nth-child(3){aspect-ratio:3/4}
+  .vg-full{height:78vh}
+}
+
 /* ============ RESPONSIVE ============ */
 @media(max-width:960px){
   .hero-grid,.about-grid,.garden-grid{grid-template-columns:1fr;gap:3rem}
@@ -618,7 +705,7 @@ footer .fl span{color:var(--rose)}
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">O mně</a></li>
     <li><a href="#services">Služby</a></li>
-    <li><a href="#garden">Zahrada</a></li>
+    <li><a href="#gallery">Galerie</a></li>
     <li><a href="#pricing">Ceník</a></li>
     <li><a href="../blog.html">Blog</a></li>
     <li><a href="#contact">Kontakt</a></li>
@@ -639,8 +726,8 @@ footer .fl span{color:var(--rose)}
         <em>vaše mystická tarotová múza</em>
       </h1>
       <p class="lead reveal visible d2">
-        Jsem Rezi — pražská věštkyně s více než desetiletou praxí.
-        Specializuji se na výklady karet, rituály a slovanskou divinaci —
+        Jsem Rezi, pražská věštkyně s více než desetiletou praxí.
+        Specializuji se na výklady karet, rituály a slovanskou divinaci
         pro vás, nebo pro váš event.
       </p>
       <div class="hero-ctas reveal visible d3">
@@ -707,33 +794,6 @@ footer .fl span{color:var(--rose)}
           <span class="chip">↑ ASC ve Lvu</span>
         </div>
       </div>
-      <div class="glass-quote reveal d4">
-        Metafyzika <b>od roku 2005</b>.
-      </div>
-      <div class="rose-line reveal d5">
-        <svg class="rose-bloom" viewBox="0 0 100 100" aria-hidden="true">
-          <g class="l3" fill="var(--rose)" opacity=".8">
-            <ellipse cx="50" cy="30" rx="9" ry="17"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(45 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(90 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(135 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(180 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(225 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(270 50 50)"/>
-            <ellipse cx="50" cy="30" rx="9" ry="17" transform="rotate(315 50 50)"/>
-          </g>
-          <g class="l2" fill="var(--copper)" opacity=".9">
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(22 50 50)"/>
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(82 50 50)"/>
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(142 50 50)"/>
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(202 50 50)"/>
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(262 50 50)"/>
-            <ellipse cx="50" cy="38" rx="6.5" ry="11" transform="rotate(322 50 50)"/>
-          </g>
-          <g class="l1"><circle cx="50" cy="50" r="6.5" fill="var(--brown-600)"/></g>
-        </svg>
-        <span>každý výklad rozkvétá ve správný čas</span>
-      </div>
     </div>
   </div>
 </section>
@@ -778,139 +838,108 @@ footer .fl span{color:var(--rose)}
   </div>
 </section>
 
-<!-- ============ GARDEN / PERSONAL ============ -->
-<section class="garden" id="garden">
+<!-- ============ VENUS GARDEN GALLERY ============ -->
+<section class="vgarden" id="gallery">
   <div class="divider reveal" aria-hidden="true">
     <svg viewBox="0 0 440 64" fill="none">
-      <path class="vine" pathLength="1" d="M8 32 C70 58 120 6 186 32 M254 32 C320 58 370 6 432 32" stroke="var(--copper)" stroke-width="1.4" stroke-linecap="round"/>
-      <path class="leaf" d="M110 46 q10 12 22 9 q-5-14-22-9" fill="var(--sage)" opacity=".75"/>
-      <path class="leaf" d="M330 18 q-10-12-22-9 q5 14 22 9" fill="var(--sage)" opacity=".75"/>
+      <path class="vine" pathLength="1" d="M8 32 C70 6 120 58 186 32 M254 32 C320 6 370 58 432 32" stroke="var(--copper)" stroke-width="1.4" stroke-linecap="round"/>
+      <path class="leaf" d="M84 20 q10-12 22-9 q-5 14-22 9" fill="var(--sage)" opacity=".75"/>
+      <path class="leaf" d="M356 44 q-10 12-22 9 q5-14 22-9" fill="var(--sage)" opacity=".75"/>
       <g class="bud">
-        <path d="M220 20 v24 M220 26 l8 8 M220 26 l-8 8" stroke="var(--rose)" stroke-width="1.3" stroke-linecap="round"/>
-        <circle cx="220" cy="16" r="5" stroke="var(--copper)" stroke-width="1.3"/>
+        <circle cx="220" cy="32" r="12" stroke="var(--rose)" stroke-width="1.3"/>
+        <circle cx="220" cy="32" r="7" stroke="var(--copper)" stroke-width="1.2"/>
+        <circle cx="220" cy="32" r="2.6" fill="var(--copper)"/>
       </g>
     </svg>
   </div>
-  <div class="wrap garden-grid">
-    <div>
-      <p class="label reveal">Za kartami</p>
-      <h2 class="reveal d1">Život ve <em>Venušině zahradě</em></h2>
-      <p class="reveal d2">
-        Když zrovna nevykládám karty, najdete mě u dobré knihy a bylinkového čaje,
-        nad plány na cesty nebo při každodenní józe a tanci. A ze všeho nejvíc
-        pečuji o svou rodinu a kamarády.
-      </p>
-      <div class="chips reveal d3">
-        <span class="chip">✦ Studium tarotu &amp; astrologie</span>
-        <span class="chip">✿ Bylinky &amp; květiny</span>
-        <span class="chip">☾ Denní jóga &amp; meditace</span>
-        <span class="chip">♡ Rodina &amp; přátelé</span>
-        <span class="chip">✈ Cestování</span>
-        <span class="chip">📖 Čtení</span>
-        <span class="chip">♫ Tanec</span>
-        <span class="chip">✧ Sebepéče &amp; učení</span>
-      </div>
-    </div>
-    <div class="gallery reveal d2">
-      <div class="arch" data-img>
-        <img src="../images/gallery-1.jpg" alt="Tarot reading at a Himalayan salt wall spa" loading="lazy">
-        <div class="fallback"><span class="sym">✿</span><small>gallery-1.jpg</small></div>
-      </div>
-      <div class="arch" data-img>
-        <img src="../images/gallery-2.jpg" alt="Group tarot reading circle in a Prague park" loading="lazy" style="object-position:48% 60%">
-        <div class="fallback"><span class="sym">♀</span><small>gallery-2.jpg</small></div>
-      </div>
-      <div class="arch" data-img>
-        <img src="../images/gallery-3.jpg" alt="Crystals, amethyst talisman and herbal tea ritual" loading="lazy">
-        <div class="fallback"><span class="sym">☾</span><small>gallery-3.jpg</small></div>
-      </div>
-    </div>
-  </div>
-  <div class="garden-scene reveal">
-    <svg class="butterfly" viewBox="0 0 40 30" aria-hidden="true">
-      <g class="wings">
-        <path d="M20 15 C8 1 -1 6 4 14 C-1 22 8 28 20 15" fill="var(--copper)" opacity=".85"/>
-        <path d="M20 15 C32 1 41 6 36 14 C41 22 32 28 20 15" fill="var(--rose)" opacity=".85"/>
-      </g>
-      <line x1="20" y1="7" x2="20" y2="24" stroke="var(--brown-800)" stroke-width="1.6" stroke-linecap="round"/>
-    </svg>
-    <svg class="bench-svg" viewBox="0 0 600 210" fill="none" stroke="var(--brown-600)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-      <!-- ground -->
-      <path d="M28 186 H572" opacity=".3" stroke-dasharray="1 8"/>
-      <!-- bench -->
-      <g opacity=".92">
-        <rect x="222" y="126" width="156" height="9" rx="4.5"/>
-        <path d="M228 126 V84 q0-12 12-12 h120 q12 0 12 12 v42"/>
-        <path d="M252 100 q24-20 48 0 q24 20 48 0" stroke-width="1.6"/>
-        <path d="M234 135 v38 q0 8-8 10 M366 135 v38 q0 8 8 10"/>
-        <path d="M234 158 h132" stroke-width="1.4" opacity=".7"/>
-      </g>
-      <!-- lavender (left) -->
-      <g stroke="var(--sage)" stroke-width="1.6">
-        <g class="sway"><path d="M96 184 V120"/><g fill="#9b8bbe" stroke="none"><ellipse cx="96" cy="116" rx="4" ry="6"/><ellipse cx="92" cy="126" rx="3.4" ry="5"/><ellipse cx="100" cy="126" rx="3.4" ry="5"/><ellipse cx="93" cy="136" rx="3" ry="4.6"/><ellipse cx="99" cy="136" rx="3" ry="4.6"/></g></g>
-        <g class="sway s2"><path d="M126 184 V108"/><g fill="#9b8bbe" stroke="none"><ellipse cx="126" cy="104" rx="4" ry="6"/><ellipse cx="122" cy="114" rx="3.4" ry="5"/><ellipse cx="130" cy="114" rx="3.4" ry="5"/><ellipse cx="123" cy="124" rx="3" ry="4.6"/><ellipse cx="129" cy="124" rx="3" ry="4.6"/></g></g>
-        <g class="sway s3"><path d="M156 184 V126"/><g fill="#9b8bbe" stroke="none"><ellipse cx="156" cy="122" rx="4" ry="6"/><ellipse cx="152" cy="132" rx="3.4" ry="5"/><ellipse cx="160" cy="132" rx="3.4" ry="5"/></g></g>
-      </g>
-      <!-- roses (right) -->
-      <g stroke="var(--sage)" stroke-width="1.6">
-        <g class="sway s2"><path d="M452 184 V128 q0-6 8-8"/><path d="M452 156 q-12-2-14-14" stroke-width="1.3"/><g stroke="var(--rose)"><circle cx="464" cy="114" r="11" stroke-width="1.5"/><circle cx="464" cy="114" r="6" stroke-width="1.3"/><circle cx="464" cy="114" r="2" fill="var(--rose)" stroke="none"/></g></g>
-        <g class="sway s4"><path d="M496 184 V114 q0-6 6-8"/><path d="M496 148 q14-2 16-16" stroke-width="1.3"/><g stroke="var(--copper)"><circle cx="506" cy="99" r="12" stroke-width="1.5"/><circle cx="506" cy="99" r="7" stroke-width="1.3"/><circle cx="506" cy="99" r="2.4" fill="var(--copper)" stroke="none"/></g></g>
-        <g class="sway"><path d="M534 184 V140"/><g stroke="var(--rose)"><circle cx="534" cy="131" r="8" stroke-width="1.4"/><circle cx="534" cy="131" r="4" stroke-width="1.2"/></g></g>
-      </g>
-      <!-- venus mark on bench back -->
-      <g stroke="var(--copper)" stroke-width="1.5"><circle cx="300" cy="88" r="5.5"/><path d="M300 93.5 v9 M296.5 98.5 h7"/></g>
-    </svg>
-  </div>
-</section>
 
-<!-- ============ INSTAGRAM ============ -->
-<a class="ig-banner reveal" href="https://instagram.com/psychicreziprague" target="_blank" rel="noopener" aria-label="Follow Rezi Tarot on Instagram — @psychicreziprague">
-  <span class="ig-text">Sledujte mě na Instagramu</span>
-  <svg class="ig-arrow" viewBox="0 0 90 60" aria-hidden="true">
-    <path pathLength="1" d="M6 8 C38 14 62 30 74 48"/>
-    <path pathLength="1" d="M60 46 L75 49 L72 34"/>
-  </svg>
-  <span class="ig-glyph">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.15" fill="var(--cream)" stroke="none"/></svg>
-    <small>@psychicreziprague</small>
-  </span>
-</a>
+  <div class="vg-intro">
+    <p class="label reveal">Venušina zahrada</p>
+    <h2 class="reveal d1">Vstupte do mé <em>zahrady</em></h2>
+    <p class="reveal d2">Tišší kout — takový, jaký je výklad. Zlaté světlo, pomalé rozkvétání a pravda, která trpělivě čeká mezi růžemi.</p>
+  </div>
 
-<!-- ============ HOW IT WORKS ============ -->
-<section class="how" id="how">
-  <div class="wrap">
-    <p class="label reveal">Jednoduše</p>
-    <h2 class="reveal d1">Jak to <em>funguje</em></h2>
-    <p class="sub reveal d2">Sezení se mnou je mystický zážitek — pohled do budoucna a jasno tam, kde ho nejvíc potřebujete, s dotekem slovanské magie a laskavosti.</p>
-    <div class="steps">
-      <div class="step reveal d1">
-        <span class="num">i.</span>
-        <h3>Napište mi</h3>
-        <p>Ozvěte se na WhatsApp nebo Instagram.</p>
-      </div>
-      <div class="step reveal d2">
-        <span class="num">ii.</span>
-        <h3>Vybereme čas &amp; místo</h3>
-        <p>Centrum Prahy, boutique spa, klidná kavárna nebo hezký lokální park pro tarotový piknik — nebo online, živě přes videohovor či jako videozáznam. Česky či anglicky, jak vám vyhovuje.</p>
-      </div>
-      <div class="step reveal d3">
-        <span class="num">iii.</span>
-        <h3>Řeknete mi, co řešíte</h3>
-        <p>Nemusíte psát celý příběh, ale čím konkrétnější budete, tím ostřejší výklad dostanete. Nemáte otázku? Nechte karty mluvit samy.</p>
-      </div>
-      <div class="step reveal d5">
-        <span class="num">v.</span>
-        <h3>Necháme to doznít</h3>
-        <p>Nemusíte všemu rozumět hned. Některé věci zapadnou až za pár týdnů. A to je na tom to krásné.</p>
-      </div>
-      <div class="step reveal d6">
-        <span class="num">vi.</span>
-        <h3>Vraťte se, až budete chtít</h3>
-        <p>Někdo přijde jednou za pár měsíců, někdo pravidelně. Řiďte se tím, co vám sedí — moje DM zůstávají otevřené.</p>
-      </div>
+  <!-- I · Klid -->
+  <div class="vg-full reveal">
+    <img src="../images/g9.jpg" alt="Rezi kráčí mezi vrbami u řeky v Praze" loading="lazy" style="object-position:center 30%">
+    <div class="vg-cap">
+      <span class="vg-note">I · Klid</span>
+      <p class="vg-line">Každý výklad začíná stejně. Vstoupíte — a hluk kolem utichne.</p>
     </div>
-    <div class="cta-row reveal d3">
-      <a class="btn btn-dark" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">✦ Začněte zprávou</a>
+  </div>
+
+  <!-- II · Přesnost -->
+  <div class="vg-split dark reveal">
+    <div class="vg-media"><img src="../images/g18.jpg" alt="Portrét Rezi ve zlatém světle, klidná a soustředěná" loading="lazy"></div>
+    <div class="vg-text">
+      <span class="vg-note">II · Přesnost</span>
+      <h3>Přesná slova —<br>výklady, které rezonují.</h3>
+      <p>Jsem asi ta nejracionálnější věštkyně, jakou potkáte: mluvím jasně a přesně. Ale ta pravá přesnost je v tom, že mé výklady rezonují — sedí přesně na to, co se právě děje ve vašem životě.</p>
+    </div>
+  </div>
+
+  <!-- detail -->
+  <div class="vg-full reveal">
+    <img src="../images/g2.jpg" alt="Detail Reziných rukou s rozloženými tarotovými kartami" loading="lazy" style="object-position:center 42%">
+    <div class="vg-cap center">
+      <span class="vg-note">Staré umění</span>
+      <p class="vg-line">Staré slovanské umění věštění — přenesené do dneška.</p>
+    </div>
+  </div>
+
+  <!-- výklad -->
+  <div class="vg-row duo reveal">
+    <div class="f"><img src="../images/g1.jpg" alt="Rezi míchá tarotové karty během výkladu" loading="lazy"></div>
+    <div class="f"><img src="../images/g8.jpg" alt="Usměvavá Rezi při výkladu v pražském parku" loading="lazy"></div>
+  </div>
+  <p class="vg-rowcap reveal">Nejdřív karty — pak orákulum, runy a metoda předávaná po generace.</p>
+
+  <!-- III · Kouzlo -->
+  <div class="vg-strip reveal">
+    <div class="vg-strip-cap">
+      <span class="vg-note">III · Kouzlo</span>
+      <p class="vg-line">Kouzlo není hlučné. Pohybuje se takhle — tiše, jistě, živě.</p>
+    </div>
+    <div class="vg-strip-imgs">
+      <div class="f"><img src="../images/g11.jpg" alt="Rezi tančí mezi vrbami" loading="lazy"></div>
+      <div class="f"><img src="../images/g12.jpg" alt="Rezi v pohybu, šaty vlají u řeky" loading="lazy"></div>
+      <div class="f"><img src="../images/g13.jpg" alt="Rezi se ohlíží přes rameno mezi stromy" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- IV · Síla -->
+  <div class="vg-split rev reveal">
+    <div class="vg-media"><img src="../images/g17.jpg" alt="Portrét usmívající se Rezi ve zlatém světle" loading="lazy"></div>
+    <div class="vg-text">
+      <span class="vg-note">IV · Síla</span>
+      <h3>Výklady jsou silné.</h3>
+      <p>Jsou silné přesně v jednom: dají vám přesně to jasno, které v danou chvíli výkladu potřebujete.</p>
+    </div>
+  </div>
+
+  <!-- klidné trio -->
+  <div class="vg-row trio reveal">
+    <div class="f"><img src="../images/g4.jpg" alt="Rezi vykládá tarot hostovi v parku" loading="lazy"></div>
+    <div class="f"><img src="../images/g5.jpg" alt="Rezi odpočívá na dece na slunci" loading="lazy"></div>
+    <div class="f"><img src="../images/g20.jpg" alt="Rezi ve slunci se zavřenýma očima" loading="lazy"></div>
+  </div>
+  <p class="vg-rowcap reveal">Mezi výklady — sluníčko, klid a špetka Venuše.</p>
+
+  <!-- pod ochranou Venuše -->
+  <div class="vg-plate reveal">
+    <div class="pimg"><img src="../images/g14.jpg" alt="Portrét Rezi ve zlatém večerním světle" loading="lazy"></div>
+    <span class="vg-note">Venušina zahrada</span>
+    <p class="vg-line">Bujná, krásná zahrada, kde je magie skutečná a odpovědi, které hledáte, čekají, až je najdete.</p>
+  </div>
+
+  <!-- závěr -->
+  <div class="vg-plate grad reveal">
+    <div class="pimg"><img src="../images/g19.jpg" alt="Rezi s rozpaženýma rukama u řeky za zlatého světla" loading="lazy"></div>
+    <span class="vg-note">Začátek</span>
+    <p class="vg-line">Co vás čeká?</p>
+    <div class="vg-ctas">
+      <a class="btn btn-solid" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">✦ Rezervovat přes WhatsApp</a>
+      <a class="btn btn-glass" href="#pricing">Prohlédnout ceník</a>
     </div>
   </div>
 </section>
@@ -998,29 +1027,9 @@ footer .fl span{color:var(--rose)}
       <summary>Kolik stojí výklad karet?</summary>
       <p>Online výklady od 1 000 Kč, individuální osobní výklad v Praze od 1 600 Kč, skupinové od 900 Kč za osobu, tarotové rituály od 1 900 Kč a věštění na akcích od 2 700 Kč za hodinu. Přesná cena dle délky a místa — <a href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" style="color:var(--copper)">napište mi na WhatsApp</a>.</p>
     </details>
-    <details class="reveal d3">
-      <summary>Mohu si objednat věštkyni na akci či večírek v Praze?</summary>
-      <p>Ano. Vystupuji jako věštkyně a kartářka na svatbách, rozlučkách se svobodou, oslavách, firemních večírcích a boutique akcích v Praze i po celém Česku.</p>
-    </details>
-    <details class="reveal d4">
-      <summary>Děláte skupinové výklady?</summary>
-      <p>Ano — skupinová sezení pro přátele, retreaty a oslavy, kde každý host dostane svůj vlastní výklad.</p>
-    </details>
     <details class="reveal d4">
       <summary>Vykládáte karty online?</summary>
       <p>Ano — online buď živě přes videohovor, nebo jako osobní videozáznam, který si můžete pustit kdykoli a kolikrát chcete. Kamkoli na světě, česky i anglicky.</p>
-    </details>
-    <details class="reveal d4">
-      <summary>Fungují výklady online doopravdy?</summary>
-      <p>Fungují skvěle. To, že jsme každý jinde, na síle výkladu nic nemění — energie a záměr nemají hranice. Karty se s vámi spojí, ať jste kdekoli.</p>
-    </details>
-    <details class="reveal d4">
-      <summary>Je to moje úplně první věštění — co mám čekat?</summary>
-      <p>Ničeho se nebojte — provedu vás každým krokem. Nemusíte nic umět ani se „správně" ptát. Mým úkolem je, abyste odešli s větším klidem a jasnem, ne se zamotanou hlavou. První výklad bývá překvapivě příjemný.</p>
-    </details>
-    <details class="reveal d5">
-      <summary>Co nabízíte kromě výkladů tarotu?</summary>
-      <p>Tarotové rituály pro záměry a životní prahy, poradenství s bylinami a květinami a venušanská sezení o kráse, wellbeingu a ženskosti.</p>
     </details>
   </div>
 </section>
@@ -1031,40 +1040,6 @@ footer .fl span{color:var(--rose)}
     <p class="label reveal" style="justify-content:center">Začněte</p>
     <h2 class="reveal d1">Karty <em>čekají</em></h2>
     <p class="sub reveal d2">Napište mi — domluvíme výklad, rituál nebo karty na vaši akci.</p>
-
-    <div class="fountain-wrap reveal d2" id="fountain" role="button" tabindex="0" aria-label="Dotkněte se fontány a něco si přejte">
-      <svg viewBox="0 0 300 250" fill="none" stroke="var(--rose)" stroke-width="2" stroke-linecap="round">
-        <!-- venus finial -->
-        <g class="fountain-glow" stroke="var(--copper)"><circle cx="150" cy="18" r="6"/><path d="M150 24 v10 M146 29 h8"/></g>
-        <!-- center jet -->
-        <path class="jet" d="M150 72 V40" stroke="var(--cream-dim)" stroke-width="1.6"/>
-        <!-- top bowl -->
-        <ellipse cx="150" cy="76" rx="40" ry="8"/>
-        <path d="M112 78 q38 24 76 0" stroke-width="1.8"/>
-        <!-- streams: top bowl -> middle bowl -->
-        <path class="stream" d="M112 82 C98 108 102 120 116 128" stroke="var(--cream-dim)" stroke-width="1.6"/>
-        <path class="stream" d="M188 82 C202 108 198 120 184 128" stroke="var(--cream-dim)" stroke-width="1.6"/>
-        <!-- droplets -->
-        <g fill="var(--cream-dim)" stroke="none">
-          <circle class="drop" cx="138" cy="86" r="2.2"/>
-          <circle class="drop d2" cx="162" cy="86" r="2.2"/>
-          <circle class="drop d3" cx="96" cy="140" r="2.2"/>
-          <circle class="drop d4" cx="204" cy="140" r="2.2"/>
-        </g>
-        <!-- middle bowl -->
-        <ellipse cx="150" cy="134" rx="68" ry="10"/>
-        <path d="M86 138 q64 34 128 0" stroke-width="1.8"/>
-        <!-- streams: middle bowl -> basin -->
-        <path class="stream" d="M88 142 C74 172 80 186 98 192" stroke="var(--cream-dim)" stroke-width="1.6"/>
-        <path class="stream" d="M212 142 C226 172 220 186 202 192" stroke="var(--cream-dim)" stroke-width="1.6"/>
-        <!-- basin -->
-        <ellipse cx="150" cy="204" rx="116" ry="15"/>
-        <ellipse cx="150" cy="203" rx="96" ry="10" fill="rgba(216,169,140,.12)" stroke="var(--cream-dim)" stroke-width="1.2"/>
-        <path d="M40 210 q110 30 220 0" stroke-width="1.8" opacity=".8"/>
-      </svg>
-      <div class="fountain-cap">✦ dotkněte se fontány &amp; něco si přejte ✦</div>
-    </div>
-    <p class="wish-msg" id="wishMsg" aria-live="polite"></p>
 
     <div class="contact-cards">
       <a class="ccard reveal d1" href="https://wa.me/420737079739?text=Dobr%C3%BD%20den%20Rezi!%20M%C3%A1m%20z%C3%A1jem%20o%20v%C3%BDklad%20tarotu.%20Kdy%20m%C3%A1te%20voln%C3%BD%20term%C3%ADn%3F" target="_blank" rel="noopener">
