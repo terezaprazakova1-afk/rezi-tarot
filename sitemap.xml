@@ -5,7 +5,8 @@
     <loc>https://rezitarot.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/"/>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/"/>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -13,14 +14,99 @@
     <loc>https://rezitarot.com/cs/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/"/>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/"/>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://rezitarot.com/blog.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://rezitarot.com/online-tarot-reading/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/online-tarot-reading/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/vyklad-karet-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/online-tarot-reading/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/cs/vyklad-karet-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/online-tarot-reading/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/vyklad-karet-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/online-tarot-reading/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/tarot-rituals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/tarot-rituals/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/tarotove-ritualy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/tarot-rituals/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/cs/tarotove-ritualy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/tarot-rituals/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/tarotove-ritualy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/tarot-rituals/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/events/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/events/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/vestkyne-na-akce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/events/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/cs/vestkyne-na-akce/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/events/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/vestkyne-na-akce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/events/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/o-mne/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/about/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/cs/o-mne/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/o-mne/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/about/"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/blog.html"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rezitarot.com/cs/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezitarot.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rezitarot.com/cs/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezitarot.com/blog.html"/>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
